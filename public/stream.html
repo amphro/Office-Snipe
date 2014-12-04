@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h1> Streaming webcam </h1>
+        <p>
+            Stream your computers web camera to the broadcast server. Since this isn't an https
+            server, you will need to click "allow" every time you load this page OR change the
+            video source.
+        </p>
+        <div class='select'>
+            <label for='videoSource'>Video source: </label><select id='videoSource'></select>
+        </div>
+
+        <video autoplay muted id="sourcevid"></video>
+        <canvas id="output"></canvas>
+        <div id="log" />
+        <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+        <script src="javascript/cameraStream.js"></script>
+    </body>
+</html>

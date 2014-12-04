@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <title>USB Launcher</title>
+        <style>
+            body div {
+                font: 13px Helvetica, Arial;
+                margin: 0 auto;
+                display: table;
+            }
+            button {
+                background-color: white;
+                width: 150px;
+                height: 80px;
+                font-size: 20px;
+                margin: 5px;
+            }
+
+            button#fire {
+                width: 500px;
+            }
+
+            .firing {
+                position: absolute;
+                width: 100%;
+                height: 2000px;
+                top: 0;
+                text-align: center;
+                background: rgba(200,100,100,.8);
+                font-size: 150px;
+                padding-top: 13%;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <canvas id="myCanvas" />
+            <div id="log"></div>
+        </div>
+        
+        <div>
+            <button id="up">up</button>
+        </div>
+        <div>
+            <button id="left">left</button>
+            <button id="right">right</button>
+        </div>
+        <div>
+            <button id="down">down</button>
+        </div>
+        <div>
+            <button id="fire">fire</button>
+        </div>
+
+        <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+        <script src="javascript/launcher.js"></script>
+        <script src="javascript/cameraWatch.js"></script>
+    </body>
+</html>
